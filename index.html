@@ -224,7 +224,7 @@
   /* About */
   .about-grid { display:grid; grid-template-columns: 0.9fr 1.1fr; gap:70px; align-items:center; }
   .about-img { aspect-ratio: 1/1; border-radius:4px; }
-  .about-img .photo, .story-img .photo, .network-photo img {
+  .about-img .photo, .network-photo img {
     width:100%; height:100%; object-fit:cover; display:block; border:1px solid var(--border);
   }
   .about-list { list-style:none; margin-top:28px; }
@@ -276,8 +276,6 @@
   .network-stat .label { font-size:0.82rem; color:var(--text-dim); margin-top:4px; }
 
   /* Story */
-  .story-grid { display:grid; grid-template-columns: 1fr 1fr; gap:60px; align-items:center; }
-  .story-img { aspect-ratio: 5/4; border-radius:4px; overflow:hidden; }
   .network-photo {
     aspect-ratio: 16/9; border-radius:4px; overflow:hidden; margin-bottom:44px;
     border:1px solid var(--border);
@@ -286,10 +284,43 @@
     margin-top:10px; font-size:0.8rem; color:var(--text-dim); text-align:center;
   }
   @media (max-width:900px) { .network-photo { aspect-ratio: 4/3; } }
-  .timeline { margin-top:26px; }
-  .t-item { display:flex; gap:18px; padding-bottom:24px; position:relative; }
-  .t-item .yr { width:64px; flex-shrink:0; color:var(--gold-light); font-family:'Noto Serif SC',serif; font-size:1.05rem; }
-  .t-item p { color:var(--text-dim); font-size:0.9rem; }
+
+  .story-head { text-align:center; max-width:640px; margin:0 auto 46px; }
+  .story-divider { display:flex; align-items:center; justify-content:center; gap:14px; margin:16px 0 22px; }
+  .story-divider .line { width:60px; height:1px; background:var(--border); }
+  .story-divider .dot { color:var(--gold); font-size:0.7rem; }
+
+  .story-photo-band { width:100%; border-radius:4px; overflow:hidden; margin-bottom:56px; aspect-ratio:21/8; border:1px solid var(--border); }
+  .story-photo-band img { width:100%; height:100%; object-fit:cover; display:block; }
+  @media (max-width:900px) { .story-photo-band { aspect-ratio:4/3; } }
+
+  .timeline-v2 { position:relative; max-width:980px; margin:0 auto; }
+  .timeline-v2::before { content:""; position:absolute; left:50%; top:0; bottom:0; width:1px; background:var(--border); transform:translateX(-50%); }
+  .tl-row { position:relative; display:flex; min-height:158px; align-items:center; }
+  .tl-row.left { justify-content:flex-start; }
+  .tl-row.right { justify-content:flex-end; }
+  .tl-card { width:44%; background:var(--card); border:1px solid var(--border); padding:26px 28px; border-radius:4px; }
+  .tl-card h3 { font-family:'Noto Serif SC',serif; font-size:1.3rem; color:var(--gold-light); font-weight:600; }
+  .tl-card .rule { width:28px; height:2px; background:var(--gold); margin:12px 0 14px; opacity:0.85; }
+  .tl-card p { color:var(--text-dim); font-size:0.88rem; line-height:1.8; }
+  .tl-node {
+    position:absolute; left:50%; top:50%; width:11px; height:11px; background:var(--gold);
+    border:2px solid var(--bg-alt); transform:translate(-50%,-50%) rotate(45deg); z-index:2;
+  }
+  .tl-callout {
+    margin-top:16px; display:inline-flex; align-items:center; gap:10px;
+    background:rgba(201,162,75,0.08); border:1px solid var(--border);
+    padding:8px 14px; border-radius:2px; font-size:0.78rem; color:var(--text-dim);
+  }
+  .tl-callout b { color:var(--gold-light); font-weight:500; }
+  .story-tagline { text-align:center; margin-top:32px; color:var(--gold-light); font-size:0.85rem; letter-spacing:4px; }
+
+  @media (max-width:900px) {
+    .timeline-v2::before { left:16px; }
+    .tl-row.left, .tl-row.right { justify-content:flex-start; padding-left:40px; }
+    .tl-card { width:100%; }
+    .tl-node { left:16px; }
+  }
   .note {
     margin-top:28px; font-size:0.78rem; color:#8a7a5f; border-left:2px solid var(--gold);
     padding:10px 16px; background:rgba(201,162,75,0.06);
@@ -321,8 +352,8 @@
   @media (max-width: 900px) {
     .nav-toggle { display:block; }
     nav ul, .nav-cta { display:none; }
-    .hero-grid, .about-grid, .story-grid, .contact-grid { grid-template-columns: 1fr; }
-    .hero-visual, .about-img, .story-img { order:-1; max-width:340px; margin:0 auto 30px; }
+    .hero-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; }
+    .hero-visual, .about-img { order:-1; max-width:340px; margin:0 auto 30px; }
     .hero h1 { font-size:2.1rem; }
     .stat-strip { grid-template-columns: repeat(2,1fr); }
     .stat:nth-child(2) { border-right:none; }
@@ -775,24 +806,79 @@
 </section>
 
 <section id="story" class="bg-alt">
-  <div class="container story-grid">
-    <div class="reveal">
-      <div class="eyebrow serif">BRAND STORY</div>
-      <h2 style="font-size:1.9rem;color:#fff;margin-bottom:14px;">品牌故事</h2>
-      <p style="color:var(--text-dim);margin-bottom:24px;">同丰泰品牌传承自香港同泰参茸集团——一个跨越百余年的参茸世家。</p>
-      <div class="timeline">
-        <div class="t-item"><div class="yr">清·咸丰</div><p>创始人林锟（字丰泰）于广东东莞万江创办"同泰药草堂"，医术精湛、乐善好施，曾为两广总督林则徐诊病，获赠"春回大地"匾额，家族世代行医济世。</p></div>
-        <div class="t-item"><div class="yr">20世纪末</div><p>后人成立香港同泰参茸集团有限公司，专营冬虫夏草、燕窝、海参、铁皮石斛、野山参、鹿茸、三七、天麻、西洋参等高端滋补品。</p></div>
-        <div class="t-item"><div class="yr">2007</div><p>香港同泰启用"同丰泰"品牌，正式进军内地高端滋补品市场。</p></div>
-        <div class="t-item"><div class="yr">2017</div><p>湖南同丰泰生物科技有限公司成立，扎根长沙，成为"同丰泰"品牌在湖南的重要经营主体。</p></div>
-        <div class="t-item"><div class="yr">2023</div><p>品牌已辐射湖南、湖北、广东、陕西、贵州、新疆、内蒙古等7省，在长沙、武汉、广州、深圳、西安、贵阳、乌鲁木齐、呼和浩特等大中城市设立"同丰泰""香港同泰"专柜专卖店50余个。</p></div>
-        <div class="t-item"><div class="yr">至今</div><p>与老百姓、九芝堂、中国中药、国药控股等12家医药连锁企业保持战略合作，坚持"优质创新、满意于民"，服务万千家庭。</p></div>
+  <div class="container">
+    <div class="story-head reveal">
+      <div class="eyebrow serif" style="justify-content:center;">传承 &middot; 百年参茸世家</div>
+      <h2 style="font-size:1.9rem;color:#fff;margin-bottom:0;">品牌故事</h2>
+      <div class="story-divider"><span class="line"></span><span class="dot">&#9670;</span><span class="line"></span></div>
+      <p style="color:var(--text-dim);">同丰泰品牌传承自香港同泰参茸集团——一个跨越百余年的参茸世家。</p>
+    </div>
+
+    <figure class="story-photo-band reveal">
+      <img src="assets/images/brand-story-team.jpg" alt="同丰泰参茸团队在行业展会现场合影" loading="lazy">
+    </figure>
+
+    <div class="timeline-v2 reveal">
+      <div class="tl-row left">
+        <div class="tl-card">
+          <h3>清&middot;咸丰</h3>
+          <div class="rule"></div>
+          <p>创始人林锟（字丰泰）于广东东莞万江创办"同泰药草堂"，医术精湛、乐善好施，曾为两广总督林则徐诊病，获赠"春回大地"匾额，家族世代行医济世。</p>
+          <div class="tl-callout"><b>"春回大地"</b><span>林则徐 &middot; 赠匾</span></div>
+        </div>
+        <div class="tl-node"></div>
       </div>
-      <div class="note">以上品牌故事整理自公司提供的官方资料，正式发布前建议由公司审核确认最终文字表述。</div>
+      <div class="tl-row right">
+        <div class="tl-node"></div>
+        <div class="tl-card">
+          <h3>20世纪末</h3>
+          <div class="rule"></div>
+          <p>后人成立香港同泰参茸集团有限公司，专营冬虫夏草、燕窝、海参、铁皮石斛、野山参、鹿茸、三七、天麻、西洋参等高端滋补品。</p>
+        </div>
+      </div>
+      <div class="tl-row left">
+        <div class="tl-card">
+          <h3>2007</h3>
+          <div class="rule"></div>
+          <p>香港同泰启用"同丰泰"品牌，正式进军内地高端滋补品市场。</p>
+        </div>
+        <div class="tl-node"></div>
+      </div>
+      <div class="tl-row right">
+        <div class="tl-node"></div>
+        <div class="tl-card">
+          <h3>2017</h3>
+          <div class="rule"></div>
+          <p>湖南同丰泰生物科技有限公司成立，扎根长沙，成为"同丰泰"品牌在湖南的重要经营主体。</p>
+        </div>
+      </div>
+      <div class="tl-row left">
+        <div class="tl-card">
+          <h3>2023</h3>
+          <div class="rule"></div>
+          <p>品牌已辐射湖南、湖北、广东、陕西、贵州、新疆、内蒙古等7省，在长沙、武汉、广州、深圳、西安、贵阳、乌鲁木齐、呼和浩特等大中城市设立"同丰泰""香港同泰"专柜专卖店50余个。</p>
+        </div>
+        <div class="tl-node"></div>
+      </div>
+      <div class="tl-row right">
+        <div class="tl-node"></div>
+        <div class="tl-card">
+          <h3>至今</h3>
+          <div class="rule"></div>
+          <p>与老百姓、九芝堂、中国中药、国药控股等12家医药连锁企业保持战略合作，坚持"优质创新、满意于民"，服务万千家庭。</p>
+        </div>
+      </div>
     </div>
-    <div class="story-img reveal" style="transition-delay:.1s">
-      <img class="photo" src="assets/images/brand-story-team.jpg" alt="同丰泰参茸团队在行业展会现场合影" loading="lazy">
+
+    <div class="stat-strip reveal" style="margin-top:60px;">
+      <div class="stat"><div class="num">百余年</div><div class="label">世家传承</div></div>
+      <div class="stat"><div class="num">7<span style="font-size:1rem;">省</span></div><div class="label">市场覆盖</div></div>
+      <div class="stat"><div class="num">50<span style="font-size:1rem;">余个</span></div><div class="label">专柜专卖店</div></div>
+      <div class="stat"><div class="num">12<span style="font-size:1rem;">家</span></div><div class="label">战略合作药企</div></div>
     </div>
+
+    <div class="story-tagline">优质创新 &middot; 满意于民</div>
+    <div class="note" style="max-width:820px;margin-left:auto;margin-right:auto;">以上品牌故事整理自公司提供的官方资料，正式发布前建议由公司审核确认最终文字表述。</div>
   </div>
 </section>
 
