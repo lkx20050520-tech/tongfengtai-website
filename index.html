@@ -279,7 +279,7 @@
   .story-grid { display:grid; grid-template-columns: 1fr 1fr; gap:60px; align-items:center; }
   .story-img { aspect-ratio: 5/4; border-radius:4px; overflow:hidden; }
   .network-photo {
-    aspect-ratio: 16/7; border-radius:4px; overflow:hidden; margin-bottom:44px;
+    aspect-ratio: 16/9; border-radius:4px; overflow:hidden; margin-bottom:44px;
     border:1px solid var(--border);
   }
   .network-photo figcaption {
@@ -403,7 +403,9 @@
 
 <section id="about">
   <div class="container about-grid">
-    <div class="ph about-img reveal">企业形象图占位<br>（办公环境 / 团队照片）</div>
+    <div class="about-img reveal">
+      <img class="photo" src="assets/images/about-storefront.jpg" alt="同丰泰参茸门店专柜实景" loading="lazy">
+    </div>
     <div class="reveal" style="transition-delay:.1s">
       <div class="eyebrow serif">ABOUT US</div>
       <h2 style="font-size:1.9rem;color:#fff;margin-bottom:18px;">关于同丰泰</h2>
@@ -706,6 +708,10 @@
       <h2>全国专柜网络</h2>
       <p>"同丰泰""香港同泰"品牌已辐射全国7省，与12家知名医药连锁企业战略合作，专柜专卖店50余家</p>
     </div>
+    <figure class="network-photo reveal">
+      <img src="assets/images/network-storefront.jpg" alt="同丰泰参茸（香港同泰）商场专柜实景" loading="lazy">
+      <figcaption>同丰泰参茸专柜实景 · 商场专柜运营现场</figcaption>
+    </figure>
     <div class="network-stat-row reveal">
       <div class="network-stat"><div class="num">7+</div><div class="label">覆盖省份</div></div>
       <div class="network-stat"><div class="num">50+</div><div class="label">专柜专卖店</div></div>
