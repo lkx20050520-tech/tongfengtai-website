@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#14100c">
+<meta name="robots" content="index, follow">
+<title>湖南同丰泰生物科技有限公司 | 参茸滋补臻品甄选</title>
+<meta name="description" content="湖南同丰泰生物科技有限公司，深耕长沙九年，专注虫草、燕窝、西洋参、天麻等名贵滋补品甄选与供应，源头把控，品质如一。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:site_name" content="同丰泰生物科技">
+<meta property="og:title" content="湖南同丰泰生物科技有限公司 | 参茸滋补臻品甄选">
+<meta property="og:description" content="扎根长沙九年，专注虫草、燕窝、西洋参、天麻等名贵滋补品的甄选与供应，全国7省、50余家专柜网络，12家医药连锁战略合作。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%2314100c' stroke='%23c9a24b' stroke-width='3'/%3E%3Ctext x='32' y='42' font-size='26' text-anchor='middle' fill='%23e6c878' font-family='serif'%3E%E5%90%8C%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "湖南同丰泰生物科技有限公司",
+  "alternateName": ["同丰泰", "香港同泰"],
+  "foundingDate": "2017",
+  "description": "专注虫草、燕窝、西洋参、天麻等名贵滋补品甄选与供应的本土企业，传承自香港同泰参茸集团。",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "铭诚绿谷产业园 1栋505",
+    "addressLocality": "长沙",
+    "addressRegion": "湖南",
+    "addressCountry": "CN"
+  },
+  "telephone": "+86-188-7408-0888",
+  "areaServed": "CN"
+}
+</script>
+<style>
+  :root {
+    --bg: #14100c;
+    --bg-alt: #1c1611;
+    --card: #211a14;
+    --gold: #c9a24b;
+    --gold-light: #e6c878;
+    --text: #ece5d8;
+    --text-dim: #a89c8a;
+    --border: #3a2f22;
+    --ease: cubic-bezier(.22,.61,.36,1);
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Noto Sans SC', sans-serif;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+  h1,h2,h3,.serif { font-family: 'Noto Serif SC', serif; }
+  a { text-decoration:none; color:inherit; }
+  img { max-width:100%; display:block; }
+  .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+  section[id] { scroll-margin-top: 88px; }
+
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--gold-light); outline-offset: 3px; border-radius:2px;
+  }
+  .skip-link {
+    position:absolute; left:16px; top:-60px; z-index:1000;
+    background: var(--gold); color:#191410; font-weight:700;
+    padding:10px 18px; border-radius:2px; transition: top .2s var(--ease);
+  }
+  .skip-link:focus { top:16px; }
+
+  /* placeholder image block */
+  .ph {
+    background: linear-gradient(135deg, #2a2119, #1a140f);
+    border: 1px dashed var(--border);
+    display:flex; align-items:center; justify-content:center;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    text-align:center;
+    padding: 12px;
+  }
+
+  /* Header */
+  header {
+    position: fixed; top:0; left:0; right:0; z-index:100;
+    background: rgba(20,16,12,0.92);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--border);
+    transition: box-shadow .25s var(--ease), background .25s var(--ease);
+  }
+  header.scrolled {
+    background: rgba(16,13,9,0.97);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.35);
+  }
+  .nav-wrap {
+    display:flex; align-items:center; justify-content:space-between;
+    height: 72px;
+  }
+  .brand { display:flex; align-items:center; gap:12px; }
+  .brand-mark {
+    width:40px; height:40px; border:1px solid var(--gold);
+    border-radius:50%; display:flex; align-items:center; justify-content:center;
+    color: var(--gold-light); font-weight:700; font-size:1.1rem;
+    flex-shrink:0;
+  }
+  .brand-name { font-size:1.05rem; letter-spacing:1px; color: var(--gold-light); }
+  .brand-name small { display:block; font-size:0.65rem; color:var(--text-dim); font-family:'Noto Sans SC',sans-serif; letter-spacing:2px; }
+  nav ul { list-style:none; display:flex; gap:36px; }
+  nav a { font-size:0.92rem; color: var(--text-dim); transition: color .2s var(--ease); position:relative; }
+  nav a:hover { color: var(--gold-light); }
+  nav a.active { color: var(--gold-light); }
+  nav a.active::after {
+    content:""; position:absolute; left:0; right:0; bottom:-22px; height:2px; background:var(--gold);
+  }
+  .nav-cta {
+    border:1px solid var(--gold); color:var(--gold-light) !important;
+    padding:8px 20px; border-radius:2px; font-size:0.88rem;
+    transition: background .2s var(--ease), color .2s var(--ease);
+  }
+  .nav-cta:hover { background: var(--gold); color:#191410 !important; }
+
+  .nav-toggle {
+    display:none; width:34px; height:24px; position:relative;
+    background:none; border:none; cursor:pointer; padding:0; flex-shrink:0;
+  }
+  .nav-toggle span {
+    position:absolute; left:0; right:0; height:2px; background:var(--gold-light);
+    border-radius:2px; transition: transform .25s var(--ease), opacity .25s var(--ease);
+  }
+  .nav-toggle span:nth-child(1){ top:0; }
+  .nav-toggle span:nth-child(2){ top:11px; }
+  .nav-toggle span:nth-child(3){ top:22px; }
+  .nav-toggle[aria-expanded="true"] span:nth-child(1){ transform:translateY(11px) rotate(45deg); }
+  .nav-toggle[aria-expanded="true"] span:nth-child(2){ opacity:0; }
+  .nav-toggle[aria-expanded="true"] span:nth-child(3){ transform:translateY(-11px) rotate(-45deg); }
+
+  /* Hero */
+  .hero {
+    min-height: 92vh;
+    display:flex; align-items:center;
+    background:
+      radial-gradient(ellipse at 20% 20%, rgba(201,162,75,0.10), transparent 55%),
+      radial-gradient(ellipse at 80% 80%, rgba(201,162,75,0.06), transparent 55%),
+      var(--bg);
+    position:relative;
+    padding-top: 72px;
+  }
+  .hero-grid { display:grid; grid-template-columns: 1.1fr 0.9fr; gap:60px; align-items:center; }
+  .eyebrow { color: var(--gold-light); font-size:0.85rem; letter-spacing:4px; margin-bottom:20px; }
+  .hero h1 { font-size:2.8rem; font-weight:700; line-height:1.4; color:#fff; margin-bottom:24px; }
+  .hero h1 span {
+    background: linear-gradient(90deg, var(--gold), var(--gold-light));
+    -webkit-background-clip: text; background-clip:text; color:transparent;
+  }
+  .hero p { color: var(--text-dim); font-size:1rem; max-width:480px; margin-bottom:36px; }
+  .btn-row { display:flex; gap:18px; flex-wrap:wrap; }
+  .btn {
+    display:inline-block; padding:14px 32px; font-size:0.95rem; border-radius:2px;
+    transition: background .25s var(--ease), color .25s var(--ease), transform .25s var(--ease), box-shadow .25s var(--ease), border-color .25s var(--ease);
+  }
+  .btn-primary { background: var(--gold); color:#191410; font-weight:700; }
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 10px 24px rgba(201,162,75,0.3); }
+  .btn-ghost { border:1px solid var(--text-dim); color:var(--text); }
+  .btn-ghost:hover { border-color: var(--gold-light); color:var(--gold-light); transform: translateY(-2px); }
+  .hero-visual {
+    aspect-ratio: 4/5; border-radius:4px;
+    background:
+      radial-gradient(circle at 50% 32%, rgba(201,162,75,0.14), transparent 60%),
+      linear-gradient(165deg, #241c14, #15100a);
+    border: 1px solid var(--border);
+    position:relative; overflow:hidden;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .hero-visual svg { width:46%; color: var(--gold-light); opacity:0.92; animation: float 6s ease-in-out infinite; }
+  @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+  .hero-caption {
+    position:absolute; bottom:34px; left:0; right:0; text-align:center;
+    color: var(--gold-light); font-family:'Noto Serif SC',serif; font-size:0.95rem; letter-spacing:3px;
+  }
+  .hero-caption small { display:block; margin-top:6px; font-family:'Noto Sans SC',sans-serif; color:var(--text-dim); font-size:0.7rem; letter-spacing:2px; }
+  .frame-corner { position:absolute; width:22px; height:22px; border-color:var(--gold); opacity:0.8; }
+  .frame-corner.tl { top:14px; left:14px; border-top:1px solid; border-left:1px solid; }
+  .frame-corner.br { bottom:14px; right:14px; border-bottom:1px solid; border-right:1px solid; }
+
+  .icon-plate {
+    aspect-ratio: 4/3;
+    background:
+      radial-gradient(circle at 50% 38%, rgba(201,162,75,0.13), transparent 65%),
+      linear-gradient(160deg, #241c14, #171109);
+    display:flex; align-items:center; justify-content:center;
+    border-bottom: 1px solid var(--border);
+  }
+  .icon-plate svg { width:56px; height:56px; color: var(--gold-light); transition: color .25s var(--ease); }
+  .product-card:hover .icon-plate svg { color:#fff; }
+  .stat-strip {
+    display:grid; grid-template-columns: repeat(4,1fr);
+    border-top:1px solid var(--border); border-bottom:1px solid var(--border);
+    margin-top:70px;
+  }
+  .stat { text-align:center; padding:28px 10px; border-right:1px solid var(--border); }
+  .stat:last-child { border-right:none; }
+  .stat .num { font-family:'Noto Serif SC',serif; font-size:1.9rem; color:var(--gold-light); }
+  .stat .label { font-size:0.8rem; color:var(--text-dim); margin-top:6px; }
+
+  section { padding: 100px 0; }
+  .section-head { text-align:center; max-width:640px; margin:0 auto 60px; }
+  .section-head .eyebrow { justify-content:center; }
+  .section-head h2 { font-size:2rem; color:#fff; margin-bottom:16px; }
+  .section-head p { color: var(--text-dim); font-size:0.95rem; }
+
+  /* Scroll reveal */
+  .reveal { opacity:0; transform: translateY(24px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+  .reveal.in-view { opacity:1; transform:none; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior:auto; }
+    .reveal { opacity:1; transform:none; transition:none; }
+    .hero-visual svg { animation:none; }
+  }
+
+  /* About */
+  .about-grid { display:grid; grid-template-columns: 0.9fr 1.1fr; gap:70px; align-items:center; }
+  .about-img { aspect-ratio: 1/1; border-radius:4px; }
+  .about-img .photo, .story-img .photo, .network-photo img {
+    width:100%; height:100%; object-fit:cover; display:block; border:1px solid var(--border);
+  }
+  .about-list { list-style:none; margin-top:28px; }
+  .about-list li { display:flex; gap:14px; padding:14px 0; border-bottom:1px solid var(--border); color:var(--text-dim); font-size:0.92rem; }
+  .about-list li::before { content:"◆"; color:var(--gold); font-size:0.7rem; margin-top:5px; }
+  .about-list b { color:var(--text); font-weight:500; }
+
+  /* Products */
+  .bg-alt { background: var(--bg-alt); }
+  .product-grid { display:grid; grid-template-columns: repeat(4,1fr); gap:24px; }
+  .product-card {
+    background: var(--card); border:1px solid var(--border); border-radius:4px; overflow:hidden;
+    transition: border-color .25s var(--ease), transform .25s var(--ease), box-shadow .25s var(--ease);
+  }
+  .product-card:hover { border-color: var(--gold); transform:translateY(-4px); box-shadow: 0 14px 32px rgba(0,0,0,0.35); }
+  .product-card .pc-body { padding:22px 20px 26px; }
+  .product-card h3 { font-size:1.15rem; color:#fff; margin-bottom:8px; }
+  .product-card p { font-size:0.85rem; color:var(--text-dim); }
+  .tag { display:inline-block; margin-top:12px; font-size:0.72rem; color:var(--gold-light); border:1px solid var(--gold); padding:3px 10px; border-radius:12px; }
+
+  /* Quality */
+  .quality-grid { display:grid; grid-template-columns: repeat(3,1fr); gap:28px; }
+  .quality-card {
+    background:var(--card); border:1px solid var(--border); padding:34px 28px; border-radius:4px;
+    transition: transform .25s var(--ease), border-color .25s var(--ease), box-shadow .25s var(--ease);
+  }
+  .quality-card:hover { transform: translateY(-4px); border-color: var(--gold); box-shadow: 0 14px 32px rgba(0,0,0,0.3); }
+  .quality-card .icon {
+    width:46px; height:46px; border:1px solid var(--gold); border-radius:50%;
+    display:flex; align-items:center; justify-content:center; color:var(--gold-light); margin-bottom:20px;
+  }
+  .quality-card .icon svg { width:22px; height:22px; }
+  .quality-card h3 { color:#fff; font-size:1.05rem; margin-bottom:10px; }
+  .quality-card p { color:var(--text-dim); font-size:0.88rem; }
+
+  /* Network */
+  .network-group { margin-bottom: 30px; }
+  .network-group h4 { color: var(--gold-light); font-size:0.95rem; font-weight:500; margin-bottom:16px; letter-spacing:1px; }
+  .pill-row { display:flex; flex-wrap:wrap; gap:12px; }
+  .pill {
+    display:inline-block; padding:9px 18px; font-size:0.85rem; color:var(--text);
+    background: var(--card); border:1px solid var(--border); border-radius:20px;
+    transition: border-color .2s var(--ease), color .2s var(--ease), transform .2s var(--ease);
+  }
+  .pill:hover { border-color: var(--gold); color:#fff; transform: translateY(-2px); }
+  .network-stat-row { display:flex; gap:40px; flex-wrap:wrap; margin-bottom:44px; }
+  .network-stat { text-align:left; }
+  .network-stat .num { font-family:'Noto Serif SC',serif; font-size:2.1rem; color:var(--gold-light); }
+  .network-stat .label { font-size:0.82rem; color:var(--text-dim); margin-top:4px; }
+
+  /* Story */
+  .story-grid { display:grid; grid-template-columns: 1fr 1fr; gap:60px; align-items:center; }
+  .story-img { aspect-ratio: 5/4; border-radius:4px; overflow:hidden; }
+  .network-photo {
+    aspect-ratio: 16/7; border-radius:4px; overflow:hidden; margin-bottom:44px;
+    border:1px solid var(--border);
+  }
+  .network-photo figcaption {
+    margin-top:10px; font-size:0.8rem; color:var(--text-dim); text-align:center;
+  }
+  @media (max-width:900px) { .network-photo { aspect-ratio: 4/3; } }
+  .timeline { margin-top:26px; }
+  .t-item { display:flex; gap:18px; padding-bottom:24px; position:relative; }
+  .t-item .yr { width:64px; flex-shrink:0; color:var(--gold-light); font-family:'Noto Serif SC',serif; font-size:1.05rem; }
+  .t-item p { color:var(--text-dim); font-size:0.9rem; }
+  .note {
+    margin-top:28px; font-size:0.78rem; color:#8a7a5f; border-left:2px solid var(--gold);
+    padding:10px 16px; background:rgba(201,162,75,0.06);
+  }
+
+  /* Contact */
+  .contact-grid { display:grid; grid-template-columns: 1fr 1fr; gap:60px; }
+  .contact-info li { list-style:none; display:flex; gap:14px; padding:16px 0; border-bottom:1px solid var(--border); }
+  .contact-info .ic { color:var(--gold-light); font-weight:700; width:20px; }
+  .contact-info .lbl { color:var(--text-dim); font-size:0.8rem; }
+  .contact-info .val { color:#fff; font-size:0.95rem; }
+  .contact-info a.val:hover { color: var(--gold-light); }
+  .qr-row { display:grid; grid-template-columns: 1fr 1fr; gap:20px; }
+  .qr-box { background:var(--card); border:1px solid var(--border); border-radius:4px; padding:24px; text-align:center; }
+  .qr-box .ph { width:100%; aspect-ratio:1/1; margin-bottom:14px; }
+  .qr-box span { font-size:0.85rem; color:var(--text-dim); }
+
+  footer { border-top:1px solid var(--border); padding:36px 0; text-align:center; }
+  footer p { color:#5f5546; font-size:0.78rem; margin-top:6px; }
+
+  .float-cta {
+    position:fixed; right:26px; bottom:26px; z-index:90;
+    background:var(--gold); color:#191410; font-weight:700;
+    padding:14px 22px; border-radius:30px; box-shadow:0 8px 24px rgba(0,0,0,0.4);
+    font-size:0.88rem; transition: transform .2s var(--ease), box-shadow .2s var(--ease);
+  }
+  .float-cta:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0,0,0,0.5); }
+
+  @media (max-width: 900px) {
+    .nav-toggle { display:block; }
+    nav ul, .nav-cta { display:none; }
+    .hero-grid, .about-grid, .story-grid, .contact-grid { grid-template-columns: 1fr; }
+    .hero-visual, .about-img, .story-img { order:-1; max-width:340px; margin:0 auto 30px; }
+    .hero h1 { font-size:2.1rem; }
+    .stat-strip { grid-template-columns: repeat(2,1fr); }
+    .stat:nth-child(2) { border-right:none; }
+    .product-grid { grid-template-columns: repeat(2,1fr); }
+    .quality-grid { grid-template-columns: 1fr; }
+    section { padding:70px 0; }
+  }
+
+  @media (max-width: 560px) {
+    .float-cta span.full { display:none; }
+  }
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">跳转到主要内容</a>
+
+<header>
+  <div class="container nav-wrap">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">同</div>
+      <div class="brand-name">同丰泰生物科技<small>TONGFENGTAI · 长沙 · 参茸滋补</small></div>
+    </div>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="展开导航菜单">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="primary-nav" aria-label="主导航">
+      <ul>
+        <li><a href="#about">关于我们</a></li>
+        <li><a href="#products">产品中心</a></li>
+        <li><a href="#quality">资质保障</a></li>
+        <li><a href="#network">专柜网络</a></li>
+        <li><a href="#story">品牌故事</a></li>
+        <li><a href="#contact">联系我们</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="nav-cta">微信咨询</a>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow serif">HUNAN · TONGFENGTAI · SINCE 2017</div>
+        <h1>一味好物<br>九年<span>甄选如初</span></h1>
+        <p>湖南同丰泰生物科技有限公司，扎根长沙九年，专注虫草、燕窝、西洋参、天麻等名贵滋补品的甄选与供应。从源头筛选到终端把关，我们只做一件事——把地道的滋补臻品，交到值得托付的人手中。</p>
+        <div class="btn-row">
+          <a href="#products" class="btn btn-primary">查看产品</a>
+          <a href="#contact" class="btn btn-ghost">进入"掌上送礼"小程序</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="frame-corner tl" aria-hidden="true"></div>
+        <div class="frame-corner br" aria-hidden="true"></div>
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M32 6 C32 16 32 22 32 30" />
+          <path d="M32 14 C24 10 18 12 14 18 C20 20 26 20 32 18" />
+          <path d="M32 14 C40 10 46 12 50 18 C44 20 38 20 32 18" />
+          <path d="M32 24 C25 22 19 25 16 32 C23 33 29 32 32 28" />
+          <path d="M32 24 C39 22 45 25 48 32 C41 33 35 32 32 28" />
+          <path d="M32 30 C26 34 24 42 26 50 C28 55 30 58 32 60" />
+          <path d="M32 30 C38 34 40 42 38 50 C36 55 34 58 32 60" opacity="0.85"/>
+        </svg>
+        <div class="hero-caption">臻品甄选 · 本草之礼<small>PRODUCT VISUAL PLACEHOLDER — 建议替换为产品实拍或品牌形象图</small></div>
+      </div>
+    </div>
+    <div class="stat-strip reveal">
+      <div class="stat"><div class="num">9<span style="font-size:1rem;">年</span></div><div class="label">深耕长沙市场</div></div>
+      <div class="stat"><div class="num">16</div><div class="label">自主注册商标</div></div>
+      <div class="stat"><div class="num">A</div><div class="label">级纳税信用企业</div></div>
+      <div class="stat"><div class="num">4+</div><div class="label">大类名贵滋补品</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about-grid">
+    <div class="ph about-img reveal">企业形象图占位<br>（办公环境 / 团队照片）</div>
+    <div class="reveal" style="transition-delay:.1s">
+      <div class="eyebrow serif">ABOUT US</div>
+      <h2 style="font-size:1.9rem;color:#fff;margin-bottom:18px;">关于同丰泰</h2>
+      <p style="color:var(--text-dim);">湖南同丰泰生物科技有限公司成立于2017年，扎根长沙经开区，是一家专注于参茸贵细滋补品甄选与流通服务的本土企业。公司秉持"精选好物、诚信经营"的理念，围绕虫草、燕窝、西洋参、天麻、人参、石斛、三七等名贵品类，建立了一套从源头筛选、供应商审核到终端销售的全流程品控体系，致力于把地道优质的滋补臻品带给每一位注重健康的家庭。</p>
+      <ul class="about-list">
+        <li><b>公司规模：</b>专业化经营团队，深耕本地滋补品市场多年</li>
+        <li><b>商标资产：</b>持有"同丰泰""尚品丰泰"等16项自主注册商标</li>
+        <li><b>纳税信用：</b>A级纳税人，经营合规稳健</li>
+        <li><b>经营资质：</b>持有食品经营许可证，具备预包装食品、保健食品销售资质</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="products" class="bg-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow serif">OUR PRODUCTS</div>
+      <h2>四大臻品滋补系列</h2>
+      <p>一物一档，一品一核，从选料到入库，每一份都经得起细看</p>
+    </div>
+    <div class="product-grid">
+      <div class="product-card reveal">
+        <div class="icon-plate">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M29 8 C31 18 33 27 31 39"/>
+            <ellipse cx="28" cy="7" rx="3" ry="5" transform="rotate(-18 28 7)"/>
+            <path d="M22 39 C19 43 19 48 24 52 C28 55 35 55 39 52 C43 48 42 43 38 40 C34 37 26 37 22 39 Z"/>
+            <path d="M24 44 L38 44 M23 48 L39 48" stroke-width="1" opacity="0.55"/>
+          </svg>
+        </div>
+        <div class="pc-body">
+          <h3>虫草</h3>
+          <p>逐批查验、定量分装，每一份都可追溯来源渠道，稳定如一。</p>
+          <span class="tag">臻选好物</span>
+        </div>
+      </div>
+      <div class="product-card reveal" style="transition-delay:.08s">
+        <div class="icon-plate">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M11 33 C11 45 21 51 32 51 C43 51 53 45 53 33"/>
+            <path d="M18 31 C18 41 24 46 32 46 C40 46 46 41 46 31" opacity="0.7"/>
+            <path d="M25 29 C25 36 28 40 32 40 C36 40 39 36 39 29" opacity="0.5"/>
+            <path d="M9 33 C18 28 46 28 55 33"/>
+          </svg>
+        </div>
+        <div class="pc-body">
+          <h3>燕窝</h3>
+          <p>丝纹细腻、质地醇正，甄选之上更看重每一炖的稳定口感。</p>
+          <span class="tag">细腻甄选</span>
+        </div>
+      </div>
+      <div class="product-card reveal" style="transition-delay:.16s">
+        <div class="icon-plate">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M32 9 C30 15 30 19 32 23"/>
+            <path d="M32 23 C26 27 24 35 26 43 C27 47 30 50 32 53"/>
+            <path d="M32 23 C38 27 40 35 38 43 C37 47 34 50 32 53"/>
+            <path d="M28 29 C22 31 18 29 15 25"/>
+            <path d="M36 29 C42 31 46 29 49 25"/>
+            <path d="M26 11 C24 7 20 6 17 7 M38 11 C40 7 44 6 47 7" opacity="0.7"/>
+          </svg>
+        </div>
+        <div class="pc-body">
+          <h3>西洋参</h3>
+          <p>选料清爽不燥，适合日常慢养，讲究的是细水长流的调理感。</p>
+          <span class="tag">日常之选</span>
+        </div>
+      </div>
+      <div class="product-card reveal" style="transition-delay:.24s">
+        <div class="icon-plate">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 45 L19 27 L27 38 L36 21 L58 45" opacity="0.45"/>
+            <path d="M22 40 C18 44 18 50 24 54 C29 57 37 57 42 54 C48 50 48 44 44 40 C40 36 38 34 32 34 C26 34 26 36 22 40 Z"/>
+            <path d="M26 41 C29 45 35 45 38 41 M25 47 C29 50 35 50 39 47" stroke-width="1" opacity="0.6"/>
+          </svg>
+        </div>
+        <div class="pc-body">
+          <h3>天麻</h3>
+          <p>甄选云南昭通核心产区，道地原料，产地清晰、来源可查。</p>
+          <span class="tag">道地产区</span>
+        </div>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:30px;color:var(--text-dim);font-size:0.9rem;">此外还提供人参、石斛、三七等名贵滋补品，完整目录与实时价格请通过"掌上送礼"小程序或微信咨询获取</p>
+  </div>
+</section>
+
+<section id="quality">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow serif">QUALITY ASSURANCE</div>
+      <h2>资质与品控保障</h2>
+      <p>合规经营，稳健前行，让每一份滋补都值得信赖</p>
+    </div>
+    <div class="quality-grid">
+      <div class="quality-card reveal">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2l2.2 1.6 2.7-.3 1 2.5 2.3 1.4-.6 2.6.6 2.6-2.3 1.4-1 2.5-2.7-.3L12 18l-2.2-1.6-2.7.3-1-2.5-2.3-1.4.6-2.6-.6-2.6 2.3-1.4 1-2.5 2.7.3z"/>
+            <path d="M9 10.5l2 2 4-4"/>
+          </svg>
+        </div>
+        <h3>食品经营许可证</h3>
+        <p>公司持有食品经营许可证，具备预包装食品、保健食品的合法销售资质，经营合规有据可查。</p>
+      </div>
+      <div class="quality-card reveal" style="transition-delay:.08s">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3l7 3v5c0 4.5-3 8-7 9-4-1-7-4.5-7-9V6z"/>
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+        </div>
+        <h3>A级纳税信用</h3>
+        <p>连续保持A级纳税人资质，是企业经营稳健、合规诚信的重要体现。</p>
+      </div>
+      <div class="quality-card reveal" style="transition-delay:.16s">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 12l-8 8-9-9V4h7z"/>
+            <circle cx="7.5" cy="7.5" r="1.1" fill="currentColor" stroke="none"/>
+          </svg>
+        </div>
+        <h3>16项自主商标</h3>
+        <p>持有"同丰泰""尚品丰泰"等16项注册商标，品牌建设持续投入，保障消费者权益。</p>
+      </div>
+    </div>
+    <div class="note">提示：以上资质信息以公司实际取得的证照为准，建议在正式上线前补充资质证书扫描件图片，并核实供应商/代工厂的食品生产许可证（SC）信息以便向客户展示更完整的品控链路。</div>
+  </div>
+</section>
+
+<section id="network" class="bg-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow serif">RETAIL NETWORK</div>
+      <h2>全国专柜网络</h2>
+      <p>"同丰泰""香港同泰"品牌已辐射全国7省，与12家知名医药连锁企业战略合作，专柜专卖店50余家</p>
+    </div>
+    <div class="network-stat-row reveal">
+      <div class="network-stat"><div class="num">7+</div><div class="label">覆盖省份</div></div>
+      <div class="network-stat"><div class="num">50+</div><div class="label">专柜专卖店</div></div>
+      <div class="network-stat"><div class="num">12</div><div class="label">战略合作医药连锁</div></div>
+    </div>
+    <div class="network-group reveal">
+      <h4>战略合作医药连锁</h4>
+      <div class="pill-row">
+        <span class="pill">老百姓大药房</span>
+        <span class="pill">九芝堂</span>
+        <span class="pill">中国中药</span>
+        <span class="pill">国药控股</span>
+        <span class="pill">内蒙古国大药房</span>
+        <span class="pill">贵州同济堂</span>
+        <span class="pill">贵阳同仁堂</span>
+        <span class="pill">新疆百草堂</span>
+        <span class="pill">深圳民心大药房</span>
+        <span class="pill">湖南恒康</span>
+        <span class="pill">株洲人民</span>
+        <span class="pill">湖南仁康泰</span>
+      </div>
+    </div>
+    <div class="network-group reveal">
+      <h4>部分门店展示 · 湖南省内</h4>
+      <div class="pill-row">
+        <span class="pill">九芝堂 · 长沙坡子街店</span>
+        <span class="pill">九芝堂 · 常德吉春堂</span>
+        <span class="pill">九芝堂 · 岳阳旗舰店</span>
+        <span class="pill">九芝堂 · 岳阳岳东店</span>
+        <span class="pill">老百姓大药房 · 长沙湘雅路店</span>
+        <span class="pill">老百姓大药房 · 长沙东塘店</span>
+        <span class="pill">老百姓大药房 · 长沙新民路口店</span>
+        <span class="pill">老百姓大药房 · 长沙岳麓店</span>
+        <span class="pill">老百姓大药房 · 株洲旗舰店</span>
+        <span class="pill">老百姓大药房 · 浏阳旗舰店</span>
+        <span class="pill">老百姓大药房 · 郴州北湖店</span>
+        <span class="pill">老百姓大药房 · 郴州桂阳芙蓉店</span>
+        <span class="pill">张家界採芝堂</span>
+        <span class="pill">醴陵雅湘大药房</span>
+        <span class="pill">益阳人民药店</span>
+        <span class="pill">知心人大药房</span>
+        <span class="pill">衡阳祥丰大药房</span>
+        <span class="pill">湘潭易俗河国药店</span>
+        <span class="pill">香港同泰 · 湘潭专卖店</span>
+        <span class="pill">仁康泰和通店</span>
+      </div>
+    </div>
+    <div class="network-group reveal">
+      <h4>部分门店展示 · 省外</h4>
+      <div class="pill-row">
+        <span class="pill">老百姓大药房 · 西安北大街店</span>
+        <span class="pill">国药控股 · 武汉黄石路店</span>
+        <span class="pill">国大药房 · 内蒙古参茸体验馆</span>
+        <span class="pill">仁和堂 · 内蒙古专柜</span>
+        <span class="pill">百汇凤凰 · 山西运城店</span>
+        <span class="pill">正和祥 · 贵阳都司路店</span>
+      </div>
+    </div>
+    <div class="note">以上门店为部分实拍网点展示，完整50余家专柜清单可与公司核实后补充；正式上线前建议逐步替换为门店实景照片以增强真实感与说服力。</div>
+  </div>
+</section>
+
+<section id="story" class="bg-alt">
+  <div class="container story-grid">
+    <div class="reveal">
+      <div class="eyebrow serif">BRAND STORY</div>
+      <h2 style="font-size:1.9rem;color:#fff;margin-bottom:14px;">品牌故事</h2>
+      <p style="color:var(--text-dim);margin-bottom:24px;">同丰泰品牌传承自香港同泰参茸集团——一个跨越百余年的参茸世家。</p>
+      <div class="timeline">
+        <div class="t-item"><div class="yr">清·咸丰</div><p>创始人林锟（字丰泰）于广东东莞万江创办"同泰药草堂"，医术精湛、乐善好施，曾为两广总督林则徐诊病，获赠"春回大地"匾额，家族世代行医济世。</p></div>
+        <div class="t-item"><div class="yr">20世纪末</div><p>后人成立香港同泰参茸集团有限公司，专营冬虫夏草、燕窝、海参、铁皮石斛、野山参、鹿茸、三七、天麻、西洋参等高端滋补品。</p></div>
+        <div class="t-item"><div class="yr">2007</div><p>香港同泰启用"同丰泰"品牌，正式进军内地高端滋补品市场。</p></div>
+        <div class="t-item"><div class="yr">2017</div><p>湖南同丰泰生物科技有限公司成立，扎根长沙，成为"同丰泰"品牌在湖南的重要经营主体。</p></div>
+        <div class="t-item"><div class="yr">2023</div><p>品牌已辐射湖南、湖北、广东、陕西、贵州、新疆、内蒙古等7省，在长沙、武汉、广州、深圳、西安、贵阳、乌鲁木齐、呼和浩特等大中城市设立"同丰泰""香港同泰"专柜专卖店50余个。</p></div>
+        <div class="t-item"><div class="yr">至今</div><p>与老百姓、九芝堂、中国中药、国药控股等12家医药连锁企业保持战略合作，坚持"优质创新、满意于民"，服务万千家庭。</p></div>
+      </div>
+      <div class="note">以上品牌故事整理自公司提供的官方资料，正式发布前建议由公司审核确认最终文字表述。</div>
+    </div>
+    <div class="ph story-img reveal" style="transition-delay:.1s">品牌故事配图占位<br>（建议：老照片 / 匾额 / 药草堂场景）</div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container contact-grid">
+    <div class="reveal">
+      <div class="eyebrow serif">CONTACT US</div>
+      <h2 style="font-size:1.9rem;color:#fff;margin-bottom:24px;">联系我们</h2>
+      <ul class="contact-info">
+        <li><span class="ic" aria-hidden="true">◆</span><div><div class="lbl">公司地址</div><div class="val">长沙经济技术开发区铭诚绿谷产业园 1栋505</div></div></li>
+        <li><span class="ic" aria-hidden="true">◆</span><div><div class="lbl">咨询电话</div><div class="val"><a class="val" href="tel:18874080888">188 7408 0888</a></div></div></li>
+        <li><span class="ic" aria-hidden="true">◆</span><div><div class="lbl">老板微信（主）</div><div class="val">188 7408 0888</div></div></li>
+        <li><span class="ic" aria-hidden="true">◆</span><div><div class="lbl">客服微信</div><div class="val">136 3747 4119</div></div></li>
+        <li><span class="ic" aria-hidden="true">◆</span><div><div class="lbl">营业时间</div><div class="val">周一至周六 9:00 - 18:00</div></div></li>
+      </ul>
+    </div>
+    <div class="reveal" style="transition-delay:.1s">
+      <p style="color:var(--text-dim);margin-bottom:20px;font-size:0.9rem;">扫码进入"掌上送礼"小程序下单，或关注公众号获取更多资讯</p>
+      <div class="qr-row">
+        <div class="qr-box">
+          <div class="ph">"掌上送礼"<br>小程序码占位</div>
+          <span>掌上送礼 · 小程序下单</span>
+        </div>
+        <div class="qr-box">
+          <div class="ph">公众号<br>二维码占位</div>
+          <span>关注公众号</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<a href="#contact" class="float-cta"><span class="full">掌上送礼 · </span>下单 →</a>
+
+<footer>
+  <div class="container">
+    <div class="brand-name" style="color:var(--gold-light);">同丰泰生物科技</div>
+    <p>湖南同丰泰生物科技有限公司 版权所有 &nbsp;|&nbsp; 湘ICP备XXXXXXXX号-1（占位，需完成实际备案后替换）</p>
+    <p>© 2026 Tongfengtai Biotechnology Co., Ltd. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var header = document.querySelector('header');
+  var navToggle = document.querySelector('.nav-toggle');
+  var nav = document.getElementById('primary-nav');
+  var navLinks = nav.querySelectorAll('a[href^="#"]');
+
+  navToggle.addEventListener('click', function () {
+    var expanded = navToggle.getAttribute('aria-expanded') === 'true';
+    navToggle.setAttribute('aria-expanded', String(!expanded));
+    nav.classList.toggle('open');
+    if (!expanded) {
+      nav.style.display = 'block';
+      var ul = nav.querySelector('ul');
+      ul.style.cssText = 'display:flex;flex-direction:column;gap:0;position:fixed;top:72px;left:0;right:0;background:#1c1611;border-bottom:1px solid #3a2f22;padding:10px 24px;';
+    } else {
+      nav.style.display = '';
+      nav.querySelector('ul').style.cssText = '';
+    }
+  });
+  navLinks.forEach(function (a) {
+    a.addEventListener('click', function () {
+      navToggle.setAttribute('aria-expanded', 'false');
+      nav.classList.remove('open');
+      nav.style.display = '';
+      nav.querySelector('ul').style.cssText = '';
+    });
+  });
+
+  function onScroll() {
+    header.classList.toggle('scrolled', window.scrollY > 10);
+  }
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  var revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('in-view');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(function (el) { io.observe(el); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add('in-view'); });
+  }
+
+  var sections = document.querySelectorAll('main section[id]');
+  if ('IntersectionObserver' in window && sections.length) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        var link = nav.querySelector('a[href="#' + entry.target.id + '"]');
+        if (!link) return;
+        if (entry.isIntersecting) {
+          navLinks.forEach(function (a) { a.classList.remove('active'); });
+          link.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    sections.forEach(function (s) { spy.observe(s); });
+  }
+})();
+</script>
+
+</body>
+</html>
