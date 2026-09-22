@@ -294,6 +294,12 @@
   .story-photo-band { width:100%; border-radius:4px; overflow:hidden; margin-bottom:56px; aspect-ratio:21/8; border:1px solid var(--border); }
   .story-photo-band img { width:100%; height:100%; object-fit:cover; display:block; }
   @media (max-width:900px) { .story-photo-band { aspect-ratio:4/3; } }
+  .story-video-wrap {
+    width:100%; border-radius:4px; overflow:hidden;
+    border:1px solid var(--border); background:#000; line-height:0;
+  }
+  .story-video-wrap video { width:100%; height:auto; display:block; }
+  .story-video-caption { margin:10px 0 56px; font-size:0.8rem; color:var(--text-dim); text-align:center; }
 
   .timeline-v2 { position:relative; max-width:980px; margin:0 auto; }
   .timeline-v2::before { content:""; position:absolute; left:50%; top:0; bottom:0; width:1px; background:var(--border); transform:translateX(-50%); }
@@ -620,9 +626,14 @@
       <p style="color:var(--text-dim);">同丰泰品牌传承自香港同泰参茸集团——一个跨越百余年的参茸世家。</p>
     </div>
 
-    <figure class="story-photo-band reveal">
-      <img src="assets/images/brand-story-team.jpg" alt="同丰泰参茸团队在行业展会现场合影" loading="lazy">
-    </figure>
+    <div class="reveal">
+      <div class="story-video-wrap">
+        <video controls playsinline preload="metadata" poster="assets/images/story-video-poster.jpg">
+          <source src="assets/videos/brand-story-video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="story-video-caption">同丰泰云南昭通天麻核心产区直采探秘 · 源头实地纪实</div>
+    </div>
 
     <div class="timeline-v2 reveal">
       <div class="tl-row left">
