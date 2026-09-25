@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tongfengtai.netlify.app/sitemap.xml
